@@ -2,20 +2,24 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Security updates are applied to the current default branch (e.g. `main`). There is no formal versioning yet; use the latest commit from the default branch.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Branch / version | Supported          |
+| -----------------| ------------------ |
+| default (main)   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security issue (e.g. credential handling, unsafe use of SSH/SCP, or dependency vulnerability), please report it privately:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+- **Email:** michel@micheltlutz.me  
+- **Subject:** `[frida-ios-dump-swift] Security: brief description`
+
+**What to expect:**
+
+- We will acknowledge receipt within a few days.
+- We will discuss the issue and possible fixes with you before any public disclosure.
+- If the report is accepted, we will work on a fix and coordinate disclosure. Credit will be given unless you prefer to remain anonymous.
+- If the report is declined, we will explain why. You may still disclose after a reasonable period if you follow responsible disclosure practices.
+
+Please do not open a public issue for security vulnerabilities.

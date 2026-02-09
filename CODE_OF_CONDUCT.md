@@ -1,5 +1,7 @@
 # Contributor Covenant Code of Conduct
 
+This Code of Conduct applies to the **frida-ios-dump-swift** project (repository, issues, pull requests, and any related spaces).
+
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our
