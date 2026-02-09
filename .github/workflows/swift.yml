@@ -11,12 +11,19 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - uses: actions/checkout@v4
+
+      # Package.swift depends on ../frida-swift (sibling directory)
+      - name: Clone frida-swift
+        run: |
+          cd ..
+          git clone https://github.com/micheltlutz/frida-swift.git frida-swift
+
+      - name: Build
+        run: swift build -v
+
+      - name: Run tests
+        run: swift test -v
