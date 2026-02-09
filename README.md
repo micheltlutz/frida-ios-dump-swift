@@ -4,8 +4,6 @@
 [![codecov](https://codecov.io/gh/micheltlutz/frida-ios-dump-swift/graph/badge.svg)](https://codecov.io/gh/micheltlutz/frida-ios-dump-swift)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 ![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange.svg?style=flat)
-[![Platform Compatibility](https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/micheltlutz/frida-ios-dump-swift/badge?type=platforms)](https://swiftpackageindex.com/micheltlutz/frida-ios-dump-swift)
-[![Swift Versions](https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/micheltlutz/frida-ios-dump-swift/badge?type=swift-versions)](https://swiftpackageindex.com/micheltlutz/frida-ios-dump-swift)
 
 Dump decrypted IPAs from jailbroken iOS devices via [Frida](https://frida.re/). This is a **Swift** reimplementation of the original [frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump) (Python), using the [frida-swift](https://github.com/frida/frida-swift) bindings.
 
