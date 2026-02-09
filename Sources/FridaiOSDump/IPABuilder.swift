@@ -50,7 +50,9 @@ enum IPABuilder {
         process.waitUntilExit()
 
         if process.terminationStatus != 0 {
-            let pipe = process.standardError as! Pipe
+            guard let pipe = process.standardError as? Pipe else {
+                throw NSError(domain: "IPABuilder", code: Int(process.terminationStatus), userInfo: [NSLocalizedDescriptionKey: "zip failed"])
+            }
             let data = pipe.fileHandleForReading.readDataToEndOfFile()
             let err = String(data: data, encoding: .utf8) ?? ""
             throw NSError(domain: "IPABuilder", code: Int(process.terminationStatus), userInfo: [NSLocalizedDescriptionKey: "zip failed: \(err)"])

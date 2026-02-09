@@ -1,5 +1,12 @@
 # frida-ios-dump (Swift)
 
+![main](https://github.com/micheltlutz/frida-ios-dump-swift/actions/workflows/swift.yml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/micheltlutz/frida-ios-dump-swift/graph/badge.svg)](https://codecov.io/gh/micheltlutz/frida-ios-dump-swift)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange.svg?style=flat)
+[![Platform Compatibility](https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/micheltlutz/frida-ios-dump-swift/badge?type=platforms)](https://swiftpackageindex.com/micheltlutz/frida-ios-dump-swift)
+[![Swift Versions](https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/micheltlutz/frida-ios-dump-swift/badge?type=swift-versions)](https://swiftpackageindex.com/micheltlutz/frida-ios-dump-swift)
+
 Dump decrypted IPAs from jailbroken iOS devices via [Frida](https://frida.re/). This is a **Swift** reimplementation of the original [frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump) (Python), using the [frida-swift](https://github.com/frida/frida-swift) bindings.
 
 **Note (Frida 17):** With Frida 17 on device, the dump **only works in attach mode** (`-a`). Without `-a`, you may see `transport("Timeout was reached")` or `transport("The connection is closed")`. Open the app on the iPhone first, then run:  
@@ -43,6 +50,14 @@ Run the unit tests:
 
 ```bash
 swift test
+```
+
+## Lint
+
+Style and quality are enforced with [SwiftLint](https://github.com/realm/SwiftLint). Config: `.swiftlint.yml`. [Hound](https://houndci.com/) runs SwiftLint on pull requests.
+
+```bash
+swiftlint lint --config .swiftlint.yml
 ```
 
 ## Usage

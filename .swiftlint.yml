@@ -1,0 +1,67 @@
+# SwiftLint configuration for frida-ios-dump-swift
+# https://github.com/realm/SwiftLint#configuration
+
+# Paths to exclude from linting (build artifacts, deps, generated)
+excluded:
+  - .build
+  - .swiftpm
+  - DerivedData
+  - Carthage
+  - Pods
+
+# Only lint our source and tests
+included:
+  - Sources
+  - Tests
+
+# Line length: warn at 120, error at 200
+line_length:
+  warning: 120
+  error: 230
+  ignores_urls: true
+  ignores_function_declarations: false
+  ignores_comments: true
+
+# Treat warnings as errors in CI; set to false for local dev if desired
+# strict: true
+
+# Rules disabled project-wide (noise or not applicable)
+disabled_rules:
+  - trailing_whitespace   # often left by editors; enable if you enforce strip-on-save
+
+# Relax limits that would require large refactors (keep as warnings for gradual cleanup)
+cyclomatic_complexity:
+  warning: 15
+  error: 30
+function_body_length:
+  warning: 50
+  error: 120
+function_parameter_count:
+  warning: 5
+  error: 10
+# Allow short names in closures/pattern matching (e.g. (a, b), for p in)
+identifier_name:
+  min_length: 1
+  max_length: 40
+
+# Opt-in rules for extra quality and consistency
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - first_where
+  - force_unwrapping        # warns on !
+  - implicitly_unwrapped_optional
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - unused_closure_parameter
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+
+# Rule-specific config
+reporter: "xcode"   # good for Xcode/IDE; use "emoji" or "codeclimate" for CI if preferred
+
+# Optional: fail if warning count exceeds threshold (0 = only errors fail)
+# warning_threshold: 0

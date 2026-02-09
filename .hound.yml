@@ -1,0 +1,8 @@
+# Hound CI: Swift style and quality checks on pull requests.
+# Uses SwiftLint; rules and limits are in .swiftlint.yml.
+# To disable Swift checks: set enabled: false
+# See https://help.houndci.com/en/articles/2138528-swiftlint
+
+swiftlint:
+  enabled: true
+  config_file: .swiftlint.yml
