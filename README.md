@@ -37,6 +37,14 @@ swift build -c release
 # .build/release/frida-ios-dump
 ```
 
+## Tests
+
+Run the unit tests:
+
+```bash
+swift test
+```
+
 ## Usage
 
 - **List installed applications** (PID, name, bundle identifier):

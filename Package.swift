@@ -26,5 +26,10 @@ let package = Package(
                 .process("Resources"),
             ]
         ),
+        .testTarget(
+            name: "FridaiOSDumpTests",
+            dependencies: ["FridaiOSDump"],
+            path: "Tests/FridaiOSDumpTests"
+        ),
     ]
 )
