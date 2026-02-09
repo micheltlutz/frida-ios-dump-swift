@@ -1,0 +1,22 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+DerivedData/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.pbxuser
+!default.pbxuser
+
+# Dumped output
+*.ipa
+
+# macOS
+.DS_Store
+
+# IDE / editor
+.idea/
+*.swp
+*.swo
+*~
